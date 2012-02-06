@@ -2873,10 +2873,19 @@ body {
   margin-top: 2em;
 }
 /* line 14, ../sass/_cartonama.scss */
-.container #header {
-  text-align: center;
+.container .blocks {
+  margin-top: 20px;
 }
 /* line 18, ../sass/_cartonama.scss */
+.container .blocks .box {
+  background: white;
+  vertical-align: top;
+  border: 1px solid #AFAFAF;
+  border-radius: 4px;
+  width: 32%;
+  margin: 10px 0.6%;
+}
+/* line 27, ../sass/_cartonama.scss */
 .container #map {
   position: fixed !important;
   top: 0;
@@ -2884,7 +2893,7 @@ body {
   width: 100%;
   height: 100%;
 }
-/* line 26, ../sass/_cartonama.scss */
+/* line 35, ../sass/_cartonama.scss */
 .container img.speaker {
   border: 1px solid #CCC;
   border-radius: 4px;
@@ -2892,11 +2901,11 @@ body {
   margin-top: 10px;
   margin-bottom: 10px;
 }
-/* line 34, ../sass/_cartonama.scss */
+/* line 43, ../sass/_cartonama.scss */
 .container img.hg {
   opacity: 0.5;
 }
-/* line 38, ../sass/_cartonama.scss */
+/* line 47, ../sass/_cartonama.scss */
 .container img.logo {
   float: left;
   padding-left: 18%;
@@ -2905,36 +2914,74 @@ body {
   z-index: 1;
   vertical-align: middle;
 }
-/* line 47, ../sass/_cartonama.scss */
+/* line 56, ../sass/_cartonama.scss */
 .container a {
   color: #0059B3;
 }
-/* line 51, ../sass/_cartonama.scss */
+/* line 60, ../sass/_cartonama.scss */
 .container .row .six.columns {
   width: 47.6%;
 }
-/* line 55, ../sass/_cartonama.scss */
+/* line 64, ../sass/_cartonama.scss */
 .container h2 {
   margin: 10px 20px;
 }
-/* line 59, ../sass/_cartonama.scss */
+/* line 68, ../sass/_cartonama.scss */
 .container h4 {
   margin: 10px 0 0 15px;
 }
-/* line 63, ../sass/_cartonama.scss */
+/* line 72, ../sass/_cartonama.scss */
 .container p {
   margin: 0 20px 20px;
   font-size: 1.3em;
   line-height: 1.5em;
   color: #333;
 }
-/* line 70, ../sass/_cartonama.scss */
+/* line 79, ../sass/_cartonama.scss */
 .container h2, .container h4, .container p {
   text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.8);
 }
+/* line 83, ../sass/_cartonama.scss */
+.container div.hasgeek-logo {
+  background-image: url(/img/hg-logo.png);
+  background-position: center center;
+  width: 90px;
+  height: 76px;
+}
+/* line 90, ../sass/_cartonama.scss */
+.container #header {
+  background-image: url(/img/cartonama.png);
+  background-position: right center;
+  background-repeat: no-repeat;
+  text-align: center;
+  height: 450px;
+  margin-bottom: 20px;
+}
+/* line 98, ../sass/_cartonama.scss */
+.container #header .event-title {
+  width: 400px;
+  margin-left: 100px;
+  margin-top: 60px;
+}
+/* line 104, ../sass/_cartonama.scss */
+.container #header h1, .container #header h3 {
+  text-shadow: 0 0 1px #000;
+}
+/* line 108, ../sass/_cartonama.scss */
+.container #header h1 {
+  color: #fff;
+  font-size: 6em;
+  line-height: 1em;
+}
+/* line 114, ../sass/_cartonama.scss */
+.container #header h3 {
+  color: #eee;
+  font-size: 1.6em;
+  font-weight: normal;
+}
 
 /* rounder border corners + transparency */
-/* line 80, ../sass/_cartonama.scss */
+/* line 127, ../sass/_cartonama.scss */
 #about, #left-person, #right-person, #videos, #registration, #hasgeek {
   background-color: rgba(255, 255, 255, 0.9);
   border-radius: 5px;

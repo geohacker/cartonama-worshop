@@ -11,8 +11,17 @@ body {
     margin-top: 2em;    
   }
 
-  #header {
-    text-align: center;
+  .blocks {
+    margin-top: 20px;
+  }
+
+  .blocks .box {
+    background: white;
+    vertical-align: top;
+    border: 1px solid #AFAFAF;
+    border-radius: 4px;
+    width: 32%;
+    margin: 10px 0.6%;
   }
 
   #map { 
@@ -69,6 +78,44 @@ body {
 
   h2, h4, p {
     text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.8);
+  }
+
+  div.hasgeek-logo {
+    background-image: url(/img/hg-logo.png);
+    background-position: center center;
+    width: 90px;
+    height: 76px;
+  }
+
+  #header {
+    background-image: url(/img/cartonama.png);
+    background-position: right center;
+    background-repeat: no-repeat;
+    text-align: center;
+    height: 450px;
+    margin-bottom: 20px;
+
+    .event-title {
+      width: 400px;
+      margin-left: 100px;
+      margin-top: 60px;
+    }
+
+    h1, h3 {
+      text-shadow: 0 0 1px #000;
+    }
+
+    h1 {
+      color: #fff;
+      font-size: 6em;
+      line-height: 1em;
+    }
+
+    h3 {
+      color: #eee;
+      font-size: 1.6em;
+      font-weight: normal;
+    }
   }
 }
 
