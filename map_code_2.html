@@ -1,0 +1,71 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+	<title>Cartonama - OSM Workshop</title>
+
+	<style>
+	#map {
+		height: auto;
+		position: fixed !important;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+	}
+	</style>
+	
+	<!-- openlayers -->
+ 
+	<script type="text/javascript" src="http://www.openlayers.org/dev/OpenLayers.js"></script> 
+	
+	<!-- map -->	
+	
+	<script type="text/javascript">
+  
+    var options, map, gmap, gsat, ghyb, mapnik, proj, point, selectControl;
+
+    function init(){
+		
+		OpenLayers.ImgPath = "http://js.mapbox.com/theme/dark/";
+		
+		<!-- projection -->
+		
+		options = {
+                projection: new OpenLayers.Projection("EPSG:900913"),
+                displayProjection: new OpenLayers.Projection("EPSG:4326"),
+                units: "m",
+                numZoomLevels: 20,
+                maxResolution: 156543.0339,
+					maxExtent: new OpenLayers.Bounds(-20037508, -20037508, 20037508, 20037508.34)
+        };
+        
+		<!-- map -->
+		
+		map = new OpenLayers.Map('map', options);
+
+		<!-- base layers -->
+
+		mapnik = new OpenLayers.Layer.OSM( "openstreetmap" );
+		map.addLayer(mapnik);		
+
+		/**
+		map.addControl(new OpenLayers.Control.LayerSwitcher());	
+**/		
+        map.addControl(new OpenLayers.Control.PanZoom());
+                
+		<!-- set center -->
+
+		proj = new OpenLayers.Projection("EPSG:4326");
+		point = new OpenLayers.LonLat(77.59471, 12.97980);
+		map.setCenter(point.transform(proj, map.getProjectionObject()), 12);		
+		
+}
+</script>
+</head>
+<body onLoad="init()">
+
+    <div id="map" style="width:100%; height:100%; top:0; left:0, position: fixed; z-index: 1;"></div>
+	
+</body>
+
+</html>

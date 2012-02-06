@@ -1,0 +1,13 @@
+/* line 8, ../sass/ie.sass */
+div.panel {
+  border: 1px solid #cccccc;
+}
+
+/* line 11, ../sass/ie.sass */
+.lt-ie8 .nav-bar li.has-flyout a {
+  padding-right: 20px;
+}
+/* line 13, ../sass/ie.sass */
+.lt-ie8 .nav-bar li.has-flyout a:after {
+  border-top: none;
+}
