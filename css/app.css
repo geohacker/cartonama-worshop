@@ -476,6 +476,7 @@ abbr {
   max-width: 980px;
   min-width: 727px;
   margin: 0 auto;
+  position:relative;
 }
 /* line 10, ../../../../../var/lib/gems/1.8/gems/ZURB-foundation-2.1.5.2/stylesheets/zurb/_grid.sass */
 .row .row {
@@ -504,8 +505,8 @@ abbr {
 }
 /* line 26, ../../../../../var/lib/gems/1.8/gems/ZURB-foundation-2.1.5.2/stylesheets/zurb/_grid.sass */
 .row .three.columns {
-  width: 21.68%;
-}
+  width: 21.48%;
+  }
 /* line 28, ../../../../../var/lib/gems/1.8/gems/ZURB-foundation-2.1.5.2/stylesheets/zurb/_grid.sass */
 .row .four.columns {
   width: 30.37%;
@@ -2986,4 +2987,12 @@ body {
   background-color: rgba(255, 255, 255, 0.9);
   border-radius: 5px;
   border: 1px solid #ccc;
+  position: relative;
+}
+
+#session{
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  position: relative;
 }
