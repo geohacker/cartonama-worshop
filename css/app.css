@@ -507,6 +507,7 @@ abbr {
 .row .three.columns {
   width: 21.48%;
   }
+
 /* line 28, ../../../../../var/lib/gems/1.8/gems/ZURB-foundation-2.1.5.2/stylesheets/zurb/_grid.sass */
 .row .four.columns {
   width: 30.37%;
@@ -2996,3 +2997,5 @@ body {
   border: 1px solid #ccc;
   position: relative;
 }
+
+#session:hover{background-color:#CDC9C9;}
