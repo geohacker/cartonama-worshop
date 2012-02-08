@@ -15,17 +15,29 @@
   <!-- Included CSS Files -->
   <link rel="stylesheet" href="css/app.css">
   <link rel="stylesheet" href="javascripts/leaflet/leaflet.css" />
-  
+  <script src="javascripts/jquery.min.js"></script>
+  <script src="javascripts/jquery.colorbox.js"></script>
+  <script src="javascripts/modernizr.foundation.js"></script>
+  <script src="javascripts/jquery.reveal.js"></script>
+  <script src="javascripts/jquery.orbit-1.3.0.js"></script>
+  <script src="javascripts/forms.jquery.js"></script>
+  <script src="javascripts/jquery.customforms.js"></script>
+  <script src="javascripts/jquery.placeholder.min.js"></script>
+  <script src="javascripts/app.js"></script>
   <!-- Typekit    -->
   <script type="text/javascript" src="http://use.typekit.com/guo5bse.js"></script>
   <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
-  
+  <link rel="stylesheet" href="css/colorbox.css">
   <!-- IE Fix for HTML5 Tags -->
   <!--[if lt IE 9]>
     <link rel="stylesheet" href="css/ie.css">
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
   <![endif]-->
-
+		<script>
+            jQuery(document).ready(function () {
+                jQuery('a.tile-popup').colorbox({iframe:true,  width:"80%", height:"90%" });
+            });
+        </script>
  
 
 </head>
@@ -78,67 +90,67 @@
     <div class="row" id="sessions">
       <div class="three columns box">
         <img src="img/osm.png" />
-        <a href="http://funnel.hasgeek.com/cartonama-workshop/194-introduction-to-openstreetmap" target="_blank">Introduction to OpenStreetMap</a>
+        <a class="tile-popup" href="http://funnel.hasgeek.com/cartonama-workshop/194-introduction-to-openstreetmap" target="_blank">Introduction to OpenStreetMap</a>
       </div>
       <div class="three columns box">
         <img src="img/gps.png" />
-        <a href="http://funnel.hasgeek.com/cartonama-workshop/195-gps-surveying-for-osm" target="_blank">GPS Surveying for OpenStreetMap</a>
+        <a class="tile-popup"  href="http://funnel.hasgeek.com/cartonama-workshop/195-gps-surveying-for-osm" target="_blank">GPS Surveying for OpenStreetMap</a>
       </div>
       <div class="three columns box">
         <img src="img/download.png" />
-        <a href="http://funnel.hasgeek.com/cartonama-workshop/196-downloading-from-gps" target="_blank">Downloading from GPS</a>
+        <a class="tile-popup"  href="http://funnel.hasgeek.com/cartonama-workshop/196-downloading-from-gps" target="_blank">Downloading from GPS</a>
       </div>
       <div class="three columns box">
         <img src="img/edit.png" />
-        <a href="http://funnel.hasgeek.com/cartonama-workshop/197-editing-data-in-osm" target="_blank">Editing Data for OpenStreetMap </a>
+        <a class="tile-popup"  href="http://funnel.hasgeek.com/cartonama-workshop/197-editing-data-in-osm" target="_blank">Editing Data for OpenStreetMap </a>
       </div>
       <div class="three columns box">
         <img src="img/tag.png" />
-        <a href="http://funnel.hasgeek.com/cartonama-workshop/198-tagging-and-map-features" target="_blank">Tagging and Map features</a>
+        <a class="tile-popup"  href="http://funnel.hasgeek.com/cartonama-workshop/198-tagging-and-map-features" target="_blank">Tagging and Map features</a>
       </div>
       <div class="three columns box">
         <img src="img/file.png" />
-        <a href="http://funnel.hasgeek.com/cartonama-workshop/199-geo-file-formats" target="_blank">Geographic file formats</a>
+        <a class="tile-popup"  href="http://funnel.hasgeek.com/cartonama-workshop/199-geo-file-formats" target="_blank">Geographic file formats</a>
       </div>
       <div class="three columns box">
         <img src="img/database.png" />
-        <a href="http://funnel.hasgeek.com/cartonama-workshop/200-geo-enabled-databases" target="_blank">Geo-enabled Databases</a>
+        <a class="tile-popup"  href="http://funnel.hasgeek.com/cartonama-workshop/200-geo-enabled-databases" target="_blank">Geo-enabled Databases</a>
       </div>
       <div class="three columns box">
         <img src="img/process.png" width="51px"/>
-        <a href="http://funnel.hasgeek.com/cartonama-workshop/201-processing-osm-data" target="_blank">Processing OpenStreetMap Data</a>
+        <a class="tile-popup"  href="http://funnel.hasgeek.com/cartonama-workshop/201-processing-osm-data" target="_blank">Processing OpenStreetMap Data</a>
       </div>
       <div class="three columns box">
         <img src="img/swiss.png" />
-        <a href="http://funnel.hasgeek.com/cartonama-workshop/202-data-swiss-army-knives" target="_blank">Data Swiss Army Knives</a>
+        <a class="tile-popup"  href="http://funnel.hasgeek.com/cartonama-workshop/202-data-swiss-army-knives" target="_blank">Data Swiss Army Knives</a>
       </div>
       <div class="three columns box">
         <img src="img/shape.png" />
-        <a href="http://funnel.hasgeek.com/cartonama-workshop/203-create-shapefiles-from-collected-data" target="_blank">Creating Shapefiles</a>
+        <a class="tile-popup"  href="http://funnel.hasgeek.com/cartonama-workshop/203-create-shapefiles-from-collected-data" target="_blank">Creating Shapefiles</a>
       </div>
       <div class="three columns box">
         <img src="img/tiles.png" />
-        <a href="http://funnel.hasgeek.com/cartonama-workshop/205-tilemill" target="_blank">Tiles</a>
+        <a class="tile-popup"  href="http://funnel.hasgeek.com/cartonama-workshop/205-tilemill" target="_blank">Tiles</a>
       </div>
       <div class="three columns box">
         <img src="img/tilemill.png" />
-        <a href="http://funnel.hasgeek.com/cartonama-workshop/204-tiles" target="_blank">TileMill</a>
+        <a class="tile-popup"  href="http://funnel.hasgeek.com/cartonama-workshop/204-tiles" target="_blank">TileMill</a>
       </div>
       <div class="three columns box">
         <img src="img/js.png" />
-        <a href="http://funnel.hasgeek.com/cartonama-workshop/206-javascript-mapping-apis" target="_blank">JavaScript Mapping APIs</a>
+        <a class="tile-popup"  href="http://funnel.hasgeek.com/cartonama-workshop/206-javascript-mapping-apis" target="_blank">JavaScript Mapping APIs</a>
       </div>
       <div class="three columns box">
         <img src="img/serve.png" />
-        <a href="http://funnel.hasgeek.com/cartonama-workshop/207-serving-tiles" target="_blank">Serving Tiles</a>
+        <a class="tile-popup"  href="http://funnel.hasgeek.com/cartonama-workshop/207-serving-tiles" target="_blank">Serving Tiles</a>
       </div>
       <div class="three columns box">
         <img src="img/search.png" />
-        <a href="http://funnel.hasgeek.com/cartonama-workshop/208-geocoding-and-location-queries" target="_blank">Geocoding and Location queries</a>
+        <a class="tile-popup"  href="http://funnel.hasgeek.com/cartonama-workshop/208-geocoding-and-location-queries" target="_blank">Geocoding and Location queries</a>
       </div>
       <div class="three columns box">
         <img src="img/together.png" />
-        <a href="http://funnel.hasgeek.com/cartonama-workshop/209-putting-it-all-together" target="_blank">Putting it all together</a>
+        <a class="tile-popup"  href="http://funnel.hasgeek.com/cartonama-workshop/209-putting-it-all-together" target="_blank">Putting it all together</a>
       </div>
     </div>
 
@@ -180,14 +192,7 @@
 
 
   <!-- Included JS Files -->
-  <script src="javascripts/jquery.min.js"></script>
-  <script src="javascripts/modernizr.foundation.js"></script>
-  <script src="javascripts/jquery.reveal.js"></script>
-  <script src="javascripts/jquery.orbit-1.3.0.js"></script>
-  <script src="javascripts/forms.jquery.js"></script>
-  <script src="javascripts/jquery.customforms.js"></script>
-  <script src="javascripts/jquery.placeholder.min.js"></script>
-  <script src="javascripts/app.js"></script>
+  
    <!--
   <script type="text/javascript">
     $(function($) {
