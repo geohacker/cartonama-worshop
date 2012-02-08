@@ -6,14 +6,15 @@
 <!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
 <!--[if gt IE 8]><!--> <html lang="en"> <!--<![endif]-->
 <head>
+ <script type="text/javascript" src="javascripts/leaflet/leaflet.js"></script>
   <meta charset="utf-8" />
   <!-- Set the viewport width to device width for mobile -->
   <meta name="viewport" content="width=device-width" />
-  <title>HasGeek - Cartonama Workshop - 2-3 March 2011</title>
+  <title>Cartonama Workshop - HasGeek - 2-3 March 2011</title>
 
   <!-- Included CSS Files -->
   <link rel="stylesheet" href="css/app.css">
-  <link rel="stylesheet" href="css/leaflet.css" />
+  <link rel="stylesheet" href="javascripts/leaflet/leaflet.css" />
   
   <!-- Typekit    -->
   <script type="text/javascript" src="http://use.typekit.com/guo5bse.js"></script>
@@ -25,15 +26,16 @@
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
   <![endif]-->
 
-  <script type="text/javascript" src="javascripts/leaflet/leaflet.js"></script>
+ 
 
 </head>
 <body>
   <!-- container -->
+  <div class="intro" >
   <article class="container">
-
-    <div class="row">
-      <div class="twelve columns box" id="header">
+  
+        <div class="row">
+          <div class="twelve columns box" id="header">
         <div class="hasgeek-logo"></div>
         <div class="event-title">
           <h1><i><b>Cartonama Workshop</b></i></h1>
@@ -41,6 +43,8 @@
         </div>
       </div>
     </div>
+    
+   
       
     <div class="row">
       <div class="twelve columns centered" id="about">
@@ -50,7 +54,10 @@
         <p>The workshop will involve hands-on experience and training to work with tools ranging from databases, tile servers, TileMill, Geocoding APIs, Search APIs and JavaScript front end libraries. - OpenLayers and Leaflet. Discussion sessions and lectures on issues such as quality of open geographic data, commercialization, licensing and privacy are interspersed between the hands-on training sessions. This format will allow participants to think through the practical and conceptual issues that are arising or will potentially arise when they are working with their own geographic datasets to develop location based services. For more details about the sessions and the workshop <a href="http://funnel.hasgeek.com/cartonama-workshop/" target="_blank">visit the HasGeek funnel.</a> </p>
       </div>
     </div>
+    </article>
+    </div>
 
+<article class="container">
     <div class="row">
       <div class="six columns box" id="left-person">
         <h4>Schuyler Erle</h4>
@@ -63,8 +70,7 @@
         <p>is a programmer and geographer working for impactful community and humanitarian uses of open source and open data. He is co-founder of Ground Truth Initiative, and of the Map Kibera project. He’s on the Board of the OpenStreetMap Foundation, and President of the Humanitarian OpenStreetMap Team, having helped to facilitate the OSM response to the Haiti earthquake. He’s travelled widely, organizing projects in India, Palestine, Egypt, Swaziland, and elsewhere. Previously, he co-founded Mapufacture and worked on collaborative platforms, and geoweb standards, with a wide spectrum of organizations from UN and government agencies to anarchist hacker collectives.</p>
       </div>
     </div>
-    
-    <div class="row">
+        <div class="row">
       <div class="eight columns box" id="videos" >
         <h2>Speaker Video</h2>
         <div style="margin:10px 10px 10px 15px;">
@@ -139,6 +145,34 @@
             </div>
         </div>
 
+   <div class="row">
+      <div class="twelve columns box" id="venue">
+        <h2>Venue</h2>
+        <p>The workshop will be held at the <a href="http://cis-india.org" target="_blank">Centre for Internet and Society (CIS), Bangalore.</a> The congenial atmosphere at CIS facilitates both formal and informal interactions, and peer-to-peer learning.</p>
+                          
+                <p>The Center for Internet and Society<br />
+                No. 194, 2nd C Cross, 4th Main,<br />
+                Opposite Domlur Club,<br />
+                Domlur 2nd Stage, Bangalore - 560071</p>
+               <div id="map" style="height: 200px"></div> 
+              <script>
+          var map = new L.Map('map');
+          var cloudmadeUrl = 'http://{s}.mqcdn.com/tiles/1.0.0/osm/{z}/{x}/{y}.png',
+              subDomains = ['otile1','otile2','otile3','otile4'],
+              cloudmadeAttrib = '<a href="http://open.mapquest.co.uk" target="_blank">MapQuest</a>, <a href="http://www.openstreetmap.org/" target="_blank">OpenStreetMap</a> and contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/" target="_blank">CC-BY-SA</a>';
+              var cloudmade = new L.TileLayer(cloudmadeUrl, {maxZoom: 18, attribution: cloudmadeAttrib, subdomains: subDomains});
+
+              var venue = new L.LatLng(12.934,77.608); // geographical point (longitude and latitude)
+              map.setView(venue, 15).addLayer(cloudmade);
+
+                var venue_marker = new L.Marker(venue);
+                  map.addLayer(venue_marker);
+                  venue_marker.bindPopup('The Center for Internet and Society').openPopup();
+              </script>
+
+              </div>
+              </div>
+        
         <div class="row">
             <div class="twelve columns box" id="hasgeek">
                 <h2>About Us</h2>
@@ -150,8 +184,8 @@
       <div class="twelve columns box" id="colophon">
       </div>
     </div>
-  </article>
-  <!-- container -->
+    </article>
+   <!-- container -->
   
   
 

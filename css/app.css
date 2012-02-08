@@ -61,6 +61,7 @@ table {
 /* line 60, ../../../../../var/lib/gems/1.8/gems/ZURB-foundation-2.1.5.2/stylesheets/zurb/_globals.sass */
 body {
   background: white;
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='', sizingMethod='image/scale/crop');
   font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-size: 13px;
   font-size: 1.3rem;
@@ -2864,8 +2865,8 @@ table.hide-on-tablets {
 }
 /* line 1, ../sass/_cartonama.scss */
 body {
-  background-color: #444;
-  background-image: url("wallpaper.png");
+  background-color: white;
+  
   background-repeat: repeat;
   background-attachment: scroll;
 }
@@ -2888,13 +2889,7 @@ body {
   margin: 10px 0.6%;
 }
 /* line 27, ../sass/_cartonama.scss */
-.container #map {
-  position: fixed !important;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
+
 /* line 35, ../sass/_cartonama.scss */
 .container img.speaker {
   border: 1px solid #CCC;
@@ -2984,18 +2979,36 @@ body {
 
 /* rounder border corners + transparency */
 /* line 127, ../sass/_cartonama.scss */
-#about, #left-person, #right-person, #videos, #registration, #hasgeek {
+#about  {
   background-color: rgba(255, 255, 255, 0.9);
   border-radius: 5px;
   border: 1px solid #ccc;
   position: relative;
 }
 
+#left-person, #right-person, #videos, #registration, #hasgeek, #venue {
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 6px rgba(180, 180, 180, 0.5);
+  position: relative;
+}
 #session{
   background-color: rgba(255, 255, 255, 0.9);
   border-radius: 5px;
   border: 1px solid #ccc;
+  box-shadow: 0 2px 6px rgba(180, 180, 180, 0.5);
   position: relative;
+
 }
 
 #session:hover{background-color:#CDC9C9;}
+
+.intro{
+  background-image: url('wallpaper.png');
+  padding-bottom:20px;
+}
+.speakers{
+  background-image:url("http://geohackers.in/wp-content/uploads/2011/12/bg1.png");
+  padding-bottom:20px;
+}

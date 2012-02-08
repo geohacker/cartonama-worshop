@@ -5,6 +5,13 @@ body {
   background-attachment: scroll;
 }
 
+.intro{
+  background-image: url('wallpaper.png');
+}
+
+.speakers{
+  background-image:url("http://geohackers.in/wp-content/uploads/2011/12/bg1.png");
+}
 .container {
 
   .box {
@@ -24,14 +31,6 @@ body {
     margin: 10px 0.6%;
   }
 
-  #map { 
-    position: fixed !important;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-  }
-  
   img.speaker {
     border: 1px solid #CCC;
     border-radius: 4px;
@@ -130,4 +129,13 @@ body {
   border: 1px solid #ccc;
   padding-left: 20px;
 }
+
+#session{
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  position: relative;
+}
+
+#session:hover{background-color:#CDC9C9;}
 
