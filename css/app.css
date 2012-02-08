@@ -61,7 +61,6 @@ table {
 /* line 60, ../../../../../var/lib/gems/1.8/gems/ZURB-foundation-2.1.5.2/stylesheets/zurb/_globals.sass */
 body {
   background: white;
-  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='', sizingMethod='image/scale/crop');
   font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-size: 13px;
   font-size: 1.3rem;
@@ -477,7 +476,6 @@ abbr {
   max-width: 980px;
   min-width: 727px;
   margin: 0 auto;
-  position:relative;
 }
 /* line 10, ../../../../../var/lib/gems/1.8/gems/ZURB-foundation-2.1.5.2/stylesheets/zurb/_grid.sass */
 .row .row {
@@ -486,7 +484,7 @@ abbr {
 
 /* line 13, ../../../../../var/lib/gems/1.8/gems/ZURB-foundation-2.1.5.2/stylesheets/zurb/_grid.sass */
 .column, .columns {
-  margin-left: 4.3%;
+  margin-left: 4.4%;
   float: left;
   min-height: 1px;
   position: relative;
@@ -506,9 +504,8 @@ abbr {
 }
 /* line 26, ../../../../../var/lib/gems/1.8/gems/ZURB-foundation-2.1.5.2/stylesheets/zurb/_grid.sass */
 .row .three.columns {
-  width: 21.48%;
-  }
-
+  width: 21.68%;
+}
 /* line 28, ../../../../../var/lib/gems/1.8/gems/ZURB-foundation-2.1.5.2/stylesheets/zurb/_grid.sass */
 .row .four.columns {
   width: 30.37%;
@@ -2865,21 +2862,35 @@ table.hide-on-tablets {
 }
 /* line 1, ../sass/_cartonama.scss */
 body {
-  background-color: white;
-  
+  background-color: #444;
+  /*background-image: url('wallpaper.png');*/
   background-repeat: repeat;
   background-attachment: scroll;
 }
 
-/* line 10, ../sass/_cartonama.scss */
+/* line 8, ../sass/_cartonama.scss */
+.intro {
+  background-image: url("wallpaper.png");
+}
+
+/* line 12, ../sass/_cartonama.scss */
+.speakers {
+  background-image: url("http://geohackers.in/wp-content/uploads/2011/12/bg1.png");
+}
+
+/* line 16, ../sass/_cartonama.scss */
+.container {
+  padding-bottom: 40px;
+}
+/* line 20, ../sass/_cartonama.scss */
 .container .box {
   margin-top: 2em;
 }
-/* line 14, ../sass/_cartonama.scss */
+/* line 24, ../sass/_cartonama.scss */
 .container .blocks {
   margin-top: 20px;
 }
-/* line 18, ../sass/_cartonama.scss */
+/* line 28, ../sass/_cartonama.scss */
 .container .blocks .box {
   background: white;
   vertical-align: top;
@@ -2888,21 +2899,20 @@ body {
   width: 32%;
   margin: 10px 0.6%;
 }
-/* line 27, ../sass/_cartonama.scss */
-
-/* line 35, ../sass/_cartonama.scss */
+/* line 37, ../sass/_cartonama.scss */
 .container img.speaker {
   border: 1px solid #CCC;
   border-radius: 4px;
   margin-left: 15px;
   margin-top: 10px;
   margin-bottom: 10px;
+  max-width: 90%;
 }
-/* line 43, ../sass/_cartonama.scss */
+/* line 46, ../sass/_cartonama.scss */
 .container img.hg {
   opacity: 0.5;
 }
-/* line 47, ../sass/_cartonama.scss */
+/* line 50, ../sass/_cartonama.scss */
 .container img.logo {
   float: left;
   padding-left: 18%;
@@ -2911,41 +2921,41 @@ body {
   z-index: 1;
   vertical-align: middle;
 }
-/* line 56, ../sass/_cartonama.scss */
+/* line 59, ../sass/_cartonama.scss */
 .container a {
   color: #0059B3;
 }
-/* line 60, ../sass/_cartonama.scss */
+/* line 63, ../sass/_cartonama.scss */
 .container .row .six.columns {
   width: 47.6%;
 }
-/* line 64, ../sass/_cartonama.scss */
+/* line 67, ../sass/_cartonama.scss */
 .container h2 {
   margin: 10px 20px;
 }
-/* line 68, ../sass/_cartonama.scss */
+/* line 71, ../sass/_cartonama.scss */
 .container h4 {
   margin: 10px 0 0 15px;
 }
-/* line 72, ../sass/_cartonama.scss */
+/* line 75, ../sass/_cartonama.scss */
 .container p {
   margin: 0 20px 20px;
   font-size: 1.3em;
   line-height: 1.5em;
   color: #333;
 }
-/* line 79, ../sass/_cartonama.scss */
+/* line 82, ../sass/_cartonama.scss */
 .container h2, .container h4, .container p {
   text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.8);
 }
-/* line 83, ../sass/_cartonama.scss */
+/* line 86, ../sass/_cartonama.scss */
 .container div.hasgeek-logo {
   background-image: url(/img/hg-logo.png);
   background-position: center center;
   width: 90px;
   height: 76px;
 }
-/* line 90, ../sass/_cartonama.scss */
+/* line 93, ../sass/_cartonama.scss */
 .container #header {
   background-image: url(/img/cartonama.png);
   background-position: right center;
@@ -2954,61 +2964,117 @@ body {
   height: 450px;
   margin-bottom: 20px;
 }
-/* line 98, ../sass/_cartonama.scss */
+/* line 101, ../sass/_cartonama.scss */
 .container #header .event-title {
   width: 400px;
   margin-left: 100px;
   margin-top: 60px;
 }
-/* line 104, ../sass/_cartonama.scss */
+/* line 107, ../sass/_cartonama.scss */
 .container #header h1, .container #header h3 {
   text-shadow: 0 0 1px #000;
 }
-/* line 108, ../sass/_cartonama.scss */
+/* line 111, ../sass/_cartonama.scss */
 .container #header h1 {
   color: #fff;
   font-size: 6em;
   line-height: 1em;
 }
-/* line 114, ../sass/_cartonama.scss */
+/* line 117, ../sass/_cartonama.scss */
 .container #header h3 {
   color: #eee;
   font-size: 1.6em;
   font-weight: normal;
 }
 
+/* line 125, ../sass/_cartonama.scss */
+.content {
+  /*background-color: #eee;*/
+  background-image: -moz-linear-gradient(bottom, white 0%, #0a0a0a 100%);
+  background-image: -webkit-linear-gradient(bottom, white 0%, #020202 100%);
+  background-image: -o-linear-gradient(bottom, white 0%, #020202 100%);
+  background-image: -ms-linear-gradient(bottom, white 0%, #020202 100%);
+}
+
 /* rounder border corners + transparency */
-/* line 127, ../sass/_cartonama.scss */
-#about  {
+/* line 137, ../sass/_cartonama.scss */
+#about, #left-person, #right-person, #videos, #registration, #hasgeek, #session, #venue {
   background-color: rgba(255, 255, 255, 0.9);
   border-radius: 5px;
-  border: 1px solid #ccc;
-  position: relative;
+  border: 1px solid #bbb;
 }
 
-#left-person, #right-person, #videos, #registration, #hasgeek, #venue {
+/* line 143, ../sass/_cartonama.scss */
+#left-person, #right-person {
+  margin-left: 1%;
+  width: 47.6%;
+}
+
+/* line 149, ../sass/_cartonama.scss */
+#sessions div.columns {
   background-color: rgba(255, 255, 255, 0.9);
-  border-radius: 5px;
-  border: 1px solid #ccc;
-  box-shadow: 0 2px 6px rgba(180, 180, 180, 0.5);
+  border-radius: 4px;
+  border: 1px solid #bbb;
   position: relative;
+  text-align: center;
+  width: 21.7%;
+  height: 200px;
+  margin-left: 4%;
+  cursor: pointer;
 }
-#session{
-  background-color: rgba(255, 255, 255, 0.9);
-  border-radius: 5px;
-  border: 1px solid #ccc;
-  box-shadow: 0 2px 6px rgba(180, 180, 180, 0.5);
-  position: relative;
-
+/* line 160, ../sass/_cartonama.scss */
+#sessions div.columns:nth-of-type(4n+1) {
+  margin-left: 0;
+  clear: left;
+}
+/* line 165, ../sass/_cartonama.scss */
+#sessions div.columns:hover {
+  background-color: #CDC9C9;
+}
+/* line 169, ../sass/_cartonama.scss */
+#sessions div.columns img {
+  display: block;
+  margin: 20px auto;
+  height: 90px;
+}
+/* line 175, ../sass/_cartonama.scss */
+#sessions div.columns a {
+  display: block;
+  margin: 30px;
+  margin-top: 0;
+  font-size: 1.2em;
+  line-height: 1.5em;
+  text-transform: capitalize;
 }
 
-#session:hover{background-color:#CDC9C9;}
-
-.intro{
-  background-image: url('wallpaper.png');
-  padding-bottom:20px;
+/* Mobile Stuff */
+@media only screen and (max-width: 960px) {
+  /* line 189, ../sass/_cartonama.scss */
+  .container #header .event-title {
+    background: rgba(0, 0, 0, 0.9);
+    padding: 20px;
+    border: 1px solid #111;
+    border-radius: 4px;
+  }
 }
-.speakers{
-  background-image:url("http://geohackers.in/wp-content/uploads/2011/12/bg1.png");
-  padding-bottom:20px;
+@media only screen and (max-width: 767px) {
+  /* line 197, ../sass/_cartonama.scss */
+  .container #header {
+    height: 400px;
+    background-position: center center;
+  }
+  /* line 201, ../sass/_cartonama.scss */
+  .container #header .event-title {
+    width: auto;
+    margin: 20px auto;
+  }
+  /* line 206, ../sass/_cartonama.scss */
+  .container #header h1 {
+    font-size: 5em;
+  }
+
+  /* line 211, ../sass/_cartonama.scss */
+  #sessions div.columns {
+    margin-left: 0;
+  }
 }

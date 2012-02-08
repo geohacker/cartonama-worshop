@@ -1,6 +1,6 @@
 body {
   background-color: #444;
-  background-image: url('wallpaper.png');
+  /*background-image: url('wallpaper.png');*/
   background-repeat: repeat;
   background-attachment: scroll;
 }
@@ -12,7 +12,10 @@ body {
 .speakers{
   background-image:url("http://geohackers.in/wp-content/uploads/2011/12/bg1.png");
 }
+
 .container {
+
+  padding-bottom: 40px;
 
   .box {
     margin-top: 2em;    
@@ -37,6 +40,7 @@ body {
     margin-left: 15px; 
     margin-top: 10px;
     margin-bottom: 10px;
+    max-width: 90%;
   }
 
   img.hg {
@@ -118,24 +122,93 @@ body {
   }
 }
 
+.content {
+  /*background-color: #eee;*/
+  background-image: -moz-linear-gradient(bottom, rgb(255,255,255) 0%, rgb(10,10,10) 100%);
+  background-image: -webkit-linear-gradient(bottom, rgb(255,255,255) 0%, rgb(2,2,2) 100%);
+  background-image: -o-linear-gradient(bottom, rgb(255,255,255) 0%, rgb(2,2,2) 100%);
+  background-image: -ms-linear-gradient(bottom, rgb(255,255,255) 0%, rgb(2,2,2) 100%);
+}
 
 
 
 
 /* rounder border corners + transparency */ 
-#about, #left-person, #right-person, #videos, #registration, #hasgeek, #session {
+#about, #left-person, #right-person, #videos, #registration, #hasgeek, #session, #venue {
   background-color: rgba(255,255,255,0.9);
   border-radius: 5px;
-  border: 1px solid #ccc;
-  padding-left: 20px;
+  border: 1px solid #bbb;
 }
 
-#session{
-  background-color: rgba(255, 255, 255, 0.9);
-  border-radius: 5px;
-  border: 1px solid #ccc;
-  position: relative;
+#left-person, #right-person {
+  margin-left: 1%;
+  width: 46%;
 }
 
-#session:hover{background-color:#CDC9C9;}
+#sessions {
+  div.columns {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 4px;
+    border: 1px solid #bbb;
+    position: relative;
+    text-align: center;
+    width: 21.8%;
+    height: 200px;
+    margin-left: 4%;
+    cursor: pointer;
 
+    &:nth-of-type(4n+1) {
+      margin-left: 0;
+      clear: left;
+    }
+
+    &:hover{
+      background-color: #CDC9C9;
+    }
+
+    img {
+      display: block;
+      margin: 20px auto;
+      height: 90px;
+    }
+
+    a {
+      display: block;
+      margin: 30px;
+      margin-top: 0;
+      font-size: 1.2em;
+      line-height: 1.5em;
+      text-transform: capitalize;
+    }
+  }
+} 
+
+
+/* Mobile Stuff */
+@media only screen and (max-width: 960px) {
+  .container #header .event-title {
+    background: rgba(0, 0, 0, 0.9);
+    padding: 20px;
+    border: 1px solid #111;
+    border-radius: 4px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .container #header {
+    height: 400px;
+    background-position: center center;
+
+    .event-title {
+      width: auto;
+      margin: 20px auto;
+    }
+
+    h1 {
+      font-size: 5em;
+    }
+  }
+
+  #sessions div.columns {
+    margin-left: 0;
+  }
+}
